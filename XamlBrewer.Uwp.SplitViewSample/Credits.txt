@@ -1,0 +1,11 @@
+﻿Template 10, by Jerry Nixon
+https://github.com/Windows-XAML/Template10
+
+Background images by tauntaunwampa
+http://www.deviantart.com/art/Harley-Quinn-318915044
+
+XAML Navigation Menu sample
+https://github.com/Microsoft/Windows-universal-samples/tree/master/xaml_navigation
+
+Navigation Drawer Layout for Windows Phone 8.1 
+https://github.com/amarmesic/windows-phone-navigation-drawer
