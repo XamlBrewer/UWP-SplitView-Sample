@@ -11,6 +11,7 @@
     <Page.DataContext>
         <vm:ShellViewModel />
     </Page.DataContext>
+    
     <Grid>
         <SplitView x:Name="MySplitView"
                    DisplayMode="Overlay"

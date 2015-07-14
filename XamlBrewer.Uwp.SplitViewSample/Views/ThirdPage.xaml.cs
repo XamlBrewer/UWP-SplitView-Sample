@@ -18,16 +18,15 @@ using XamlBrewer.Uwp.SplitViewSample.ViewModels;
 
 namespace XamlBrewer.Uwp.SplitViewSample.Views
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class ThirdPage : Page
     {
-        private MenuItem myItem = new MenuItem() { Text = "Hellookes" };
+        private MenuItem myItem;
 
         public ThirdPage()
         {
             this.InitializeComponent();
+
+           myItem = new MenuItem() { Glyph= "", Text = "Credits", Command = (DataContext as ThirdPageViewModel).ThirdPageCommand };
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

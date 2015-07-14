@@ -98,6 +98,7 @@
     <Compile Include="Mvvm\DelegateCommand.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="ViewModels\MenuItem.cs" />
+    <Compile Include="ViewModels\ThirdPageViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\FirstPage.xaml.cs">
       <DependentUpon>FirstPage.xaml</DependentUpon>
