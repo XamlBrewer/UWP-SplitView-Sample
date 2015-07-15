@@ -14,9 +14,9 @@ namespace XamlBrewer.Uwp.SplitViewSample.ViewModels
         public ShellViewModel()
         {
             // Build the menu
-            Menu.Add(new MenuItem() { Glyph = "", Text = "First", NavigationDestination = typeof(FirstPage) });
-            Menu.Add(new MenuItem() { Glyph = "", Text = "Second", NavigationDestination = typeof(SecondPage) });
-            Menu.Add(new MenuItem() { Glyph = "", Text = "Third", NavigationDestination = typeof(ThirdPage) });
+            Menu.Add(new MenuItem() { Glyph = "", Text = "First Page", NavigationDestination = typeof(FirstPage) });
+            Menu.Add(new MenuItem() { Glyph = "", Text = "Second Page", NavigationDestination = typeof(SecondPage) });
+            Menu.Add(new MenuItem() { Glyph = "", Text = "Third Page", NavigationDestination = typeof(ThirdPage) });
         }
     }
 }

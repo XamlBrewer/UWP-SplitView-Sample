@@ -26,7 +26,7 @@ namespace XamlBrewer.Uwp.SplitViewSample.Views
         {
             this.InitializeComponent();
 
-           myItem = new MenuItem() { Glyph= "", Text = "Credits", Command = (DataContext as ThirdPageViewModel).ThirdPageCommand };
+            myItem = new MenuItem() { Glyph = "", Text = "Conclusion", Command = (DataContext as ThirdPageViewModel).ThirdPageCommand };
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

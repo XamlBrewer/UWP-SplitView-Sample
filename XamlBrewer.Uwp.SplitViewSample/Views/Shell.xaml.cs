@@ -24,10 +24,9 @@ namespace XamlBrewer.Uwp.SplitViewSample
         {
             this.InitializeComponent();
 
-            InitializeOpeningManipulation();
-            InitializeClosingManipulation();
-
-            //SplitViewFrame.Navigate(typeof(FirstPage));
+            // Navigate to the first page (optionally)
+            var type = (DataContext as ShellViewModel).Menu.First().NavigationDestination;
+            SplitViewFrame.Navigate(type);
         }
 
         private void Menu_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -46,28 +45,12 @@ namespace XamlBrewer.Uwp.SplitViewSample
             }
         }
 
-        #region Opening Manipulation
-
-        private void InitializeOpeningManipulation()
-        {
-            this.SplitViewOpener.ManipulationCompleted += SplitViewOpener_ManipulationCompleted;
-        }
-
         private void SplitViewOpener_ManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)
         {
             if (e.Cumulative.Translation.X > 50)
             {
                 MySplitView.IsPaneOpen = true;
             }
-        }
-
-        #endregion
-
-        #region Closing Manipulation
-
-        private void InitializeClosingManipulation()
-        {
-            this.SplitViewPane.ManipulationCompleted += SplitViewPane_ManipulationCompleted;
         }
 
         private void SplitViewPane_ManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)
@@ -77,8 +60,6 @@ namespace XamlBrewer.Uwp.SplitViewSample
                 MySplitView.IsPaneOpen = false;
             }
         }
-
-        #endregion
 
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {

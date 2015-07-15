@@ -1,13 +1,15 @@
-﻿<Page
-    x:Class="XamlBrewer.Uwp.SplitViewSample.Views.SecondPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:XamlBrewer.Uwp.SplitViewSample.Views"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
+﻿<Page x:Class="XamlBrewer.Uwp.SplitViewSample.Views.SecondPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:XamlBrewer.Uwp.SplitViewSample.Views"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
       Background="#FFCEA1F2">
 
+    <!-- In this page, the background color is set at page level, not in the main grid. -->
+    <!-- The SplitView in Compact* mode does not pick up that color - in my current setup. -->
+    
     <Grid>
         <!-- Background -->
         <Image Source="..\Assets\catwoman.jpg"

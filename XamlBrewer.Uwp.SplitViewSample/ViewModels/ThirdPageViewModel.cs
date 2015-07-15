@@ -27,7 +27,7 @@ namespace XamlBrewer.Uwp.SplitViewSample.ViewModels
         {
             if (message == String.Empty)
             {
-                Message = "Art by tauntaunwampa";
+                Message = "SplitView Rocks";
             }
             else
             {
